@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Page</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <div id="outer-container">
+        <header>
+        <h1 id="title">Survey form</h1>
+
+        <p id="description">Please complete the survey form. Let we do our best of your suggestions.</p>
+        </header> 
+            <div id="inner-container">
+
+      
+                <form id="survey-form">
+                    <br> <br>
+                    <div class="form-group">
+                    <label id="name-label">Name:</label> <br>   <br>
+                        <input type="textbox" placeholder="Enter your name" id="name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label id="email-label">Email address:</label> <br>   <br>
+                        <input type="email" placeholder="Enter your email address" id="email" required>
+                    </div>
+  
+                    <div class="form-group">
+                        <label id="number-label">Age(Optional):</label> <br>   <br>
+                        <input type="number" placeholder="Enter your age" id="number" min="10" max="100">
+                    </div>
+  
+                    <div class="form-group">
+                        <label>Subject you like:</label> <br>   <br>
+                        <select id="dropdown">
+                            <option disabled selected value>Select subject</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option vlaue="JS">JavaScript</option>
+                        </select>
+                    </div>
+  
+                    <div class="radio">
+                        <label>Do you recommend this to your friend?</label> <br> <br>
+                        
+                        <input type="radio" name="opinion" value="definitly" id="definitly">
+                         <label for="definitly" class="radio-label">Definitly</label> <br> <br>
+                                                
+                        <input type="radio" name="opinion" value="Maybe" id="maybe">
+                        <label for="maybe" class="radio-label">Maybe</label> <br> <br>
+                                                
+                        <input type="radio" name="opinion" value="No" id="no">
+                        <label for="no" class="radio-label">No</label> <br> <br>
+                    </div>
+                
+                    <div class="checkbox">
+                        
+                        <label>What you like in our page?</label> <br> <br>
+                    
+                        <input type="checkbox" id="option1" name="option1" value="Challenge">
+                        <label for="option1" class="checkbox-label">Challenge</label> <br> <br>
+                        
+                        <input type="checkbox" id="option2" name="option2" value="Project">
+                        <label for="option2" class="checkbox-label">Project</label> <br> <br>
+                        
+                        <input type="checkbox" id="option3" name="option3" value="Learning">
+                        <label for="option3" class="checkbox-label">Learning</label> <br> <br>
+                        
+                    </div>
+                    
+                    
+                    <div class="text-area">
+                        <label>Any additional comments:</label>
+                        <br><br>
+                        <textarea rows="20" cols="50" placeholder="Enter your comments"></textarea>
+                    </div>
+ 
+                    <br>   <br>
+                    
+                  <div>
+                        <button type="submit" id="submit">Submit</button>
+                    </div> 
+                    
+                    </form>
+  
+        </div>
+  
+    
+      </div>
+    
+
+
+
+</body>
+</html>

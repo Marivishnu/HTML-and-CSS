@@ -1,0 +1,197 @@
+body{
+            position: relative;
+            background-color: #ffaa80;
+        }
+      
+      #header{
+        position: fixed;
+      }
+        
+        #header-img{
+            width: 300px;
+            height: 60px;
+            position: absolute;
+        }
+    
+        #nav-bar{
+            position: absolute;
+            left: 900px;
+            font-size: 20px;
+            font-family: serif;
+        }
+        
+        #bar-2{
+            position: absolute;
+            left: 100px;
+            width: 200px;
+        }
+        
+        #bar-3{
+            position: absolute;
+            left: 250px;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        
+        a:hover{
+            color: yellow;
+        }
+        
+        a:active{
+            color: green;
+        }
+        
+        a:visited{
+            color: red;
+        }
+        
+        #heading{
+            position: absolute;
+            top: 70px;
+            left: 30%;
+        }
+        
+        #form{
+            position: absolute;
+            display: block;
+            top: 150px;
+            left: 40%;
+        }
+        
+        #submit , .price-button{
+            background-color: yellow;
+            width: 200px;
+            height: 30px;
+            border: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+         
+        #submit{
+            position: absolute;
+            left: 40px;
+        }
+        
+        #email{
+            position: absolute;
+            width: 300px;
+            height: 30px;
+        }
+        
+        #features{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 20%;
+            top: 400px;
+        }
+        
+        #premium , #shipping , #quality{
+            display: flex;
+            flex-direction: row;
+            padding: 40px 0 80px 0;
+        }
+        
+        #pic-1 , #pic-2, #pic-3{
+            width: 60px;
+            height: 60px;
+        }
+        
+        .features-heading{
+            padding: 0 0 10px 40px;
+            white-space: nowrap;
+        }
+        
+        .features-para{
+            margin-left: -200px;
+            margin-top: 50px;
+            font-size: 20px;
+        
+        } 
+        
+        #shipping .features-para{
+            margin-left: -140px;
+        }
+        
+        #quality .features-para{
+            margin-left: -190px;
+        }
+        
+        #video{
+            position: absolute;
+            top: 1100px;
+            left: 400px;
+        }
+        
+        iframe{
+            height: 300px;
+            width: 600px;
+        }
+        
+        #price{
+            display: flex;
+            position: inherit;
+            top: 1600px;
+            left: 50px;
+            justify-content: space-evenly;
+        }
+        
+        #pack-1 , #pack-2 , #pack-3{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+                
+        }
+        
+        .price-para-heading{
+            background-color: #ddd;
+            position: absolute;
+            width: 400px;
+            text-align: center;
+            top: -19px;
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+         
+        .price-dollar{
+            position: absolute;
+            top: 60px;
+            margin-left: 150px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .price-desc{
+            position: absolute;
+            margin-top: 150px;
+            font-size: 20px;
+            width: 400px;
+            padding: 30px 0px 20px 40px;
+            margin-left: 70px;
+        }
+        
+        .price-button{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 100px;
+            width: 200px;
+            height: 30px;
+        }
+        
+        footer{
+            
+            margin-top: 1700px;
+            text-align: center;
+            width: 100%;
+            background-color: #ddd;
+        }
+        
+        @media (max-height: 350px){
+            video{
+                width: 200px;
+                height: 200px;
+            }
+        }

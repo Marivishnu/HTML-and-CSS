@@ -1,0 +1,136 @@
+ #outer-container{
+            background: linear-gradient(115deg, blue, green);
+            
+        }
+        
+        body{
+            background: url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            background-size: 100% 100%;
+            background-attachment: fixed;     
+           
+        }
+        
+        div{
+            display: block;
+            padding: 10px 0 10px 0;
+        }
+        
+        #outer-container{
+            position: relative;
+            height: 1800px;
+            width: 60%;
+            left: 18%;
+            
+            box-shadow: 10px 20px 5px 10px;
+        }
+        
+        header{
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            
+            left: 0%;
+        }
+        
+        #title{
+            position: absolute;
+            left: 36%;
+            top: -10px;
+            color: darkred;
+        }
+        
+        #description{
+            position: absolute;
+            left: 20%;
+            top: 40px;
+        } 
+        
+        #inner-container{
+            position: absolute; 
+            top: 100px;
+            left: 30%;
+            
+        }
+        
+        input, select{
+            display: block;
+            width: 300px;
+            height: 50px;
+        }
+        
+        label{
+           font-family: garamond ;
+            font-size: 25px;
+            color:  yellow;
+        }
+        
+        
+        [type="radio"]{
+            height: 25px;
+            position: absolute;
+            right: 150px;
+        }
+        
+        .radio{
+            position: absolute;
+            width: 100%;
+            height: 200px;            
+        }
+        
+        .radio-label{
+            position: absolute;
+            left: 20px;
+        }
+        
+        [type="checkbox"]{
+            height: 25px;
+            position: absolute;
+            right: 150px;
+        }
+        
+        .checkbox{
+            position: absolute;
+            top: 800px;
+            width: 100%;
+        }
+        
+        .checkbox-label{
+            position: absolute;
+            left: 20px;
+        }
+        
+        .text-area{
+            position: absolute;
+            top: 1000px;
+            width: 100%;
+            
+        }
+        
+           
+        #submit{
+            display: inline-block;
+            position: absolute;
+            top: 1500px;
+            width: 150%;
+            height: 50px;
+            
+            font-family: courier new;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            background-color: #00804d;
+            border-radius: 10px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #submit:hover{
+		      background-color: #00ff99;
+        }
+        
+        #submit:active{
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }

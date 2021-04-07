@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Document</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	  <nav id="navbar">
+    
+        <header><h1>C Programming</h1></header>
+    
+        <ul>
+            <li>    <a href="#Introduction" class="nav-link">Introduction</a> </li>
+        
+            <li>    <a href="#What_you_should_already_know" class="nav-link">What you should already know</a> </li>
+        
+            <li>    <a href="#Hello_world" class="nav-link">Hello world</a> </li>
+        
+            <li>    <a href="#Variables" class="nav-link">Variables</a> </li>
+        
+            <li>    <a href="#Variable_Declaration" class="nav-link">Variable Declaration</a> </li>
+        
+            <li>    <a href="#if_else" class="nav-link">if else</a> </li>
+        
+            <li>    <a href="#for_loop" class="nav-link">for loop</a> </li>
+            
+        </ul>
+    </nav>
+    
+    
+        <main id="main-doc">
+    
+            <section class="main-section" id="Introduction">
+            
+                <header ><h2>Introduction</h2></header>
+            
+                <p>C is a procedural programming language. It was initially developed by <b>Dennis Ritchie</b> in the year 1972. It was mainly developed as a system programming language to write an operating system. Languages developed by C programming:</p>
+                
+                <ul>
+                
+                    <li>Java</li>
+                    
+                    <li>PHP</li>
+                    
+                    <li>JavaScript</li>
+                
+                </ul>
+            </section> <hr>
+            
+            <section class="main-section" id="What_you_should_already_know">
+            
+                <header ><h2>What you should already know</h2></header>
+                
+                <p>C is the basic of all programming language. Yet you should know: </p>
+                
+                <ul>
+                
+                    <li>Basic knowledge of computer science.</li>
+                    
+                    <li>Basic knowledge of binary language.</li>
+                    
+                    <li>Flawless typing.</li>
+                
+                </ul>
+            </section> <hr>
+            
+            <section class="main-section" id="Hello_world">
+        
+                <header ><h2>Hello world</h2></header>
+            
+                <p>Most students of programming languages, start from the famous 'Hello World' code. This program prints 'Hello World' when executed. This simple example tries to make understand that how C programs are constructed and executed.</p>
+                
+                <div>
+                <pre>
+                <code> 
+    #include &lt;stdio.h&gt;
+
+    int main() {
+    printf("Hello World!");
+    return 0;
+    }</code>
+                        
+                </pre>
+                </div>
+            </section> <hr>
+            
+            <section class="main-section" id="Variables">
+            
+                <header ><h2>Variables</h2></header>
+            
+                <p>A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+                    The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive.</p>
+                
+                
+            </section> <hr>
+            
+            <section class="main-section" id="Variable_Declaration">
+            
+                <header ><h2>Variable Declaration</h2></header>
+            
+                <p>A variable definition tells the compiler where and how much storage to create for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows </p>
+                <div>
+                <pre>
+                <code>
+    type variable_list;</code>
+                </pre>
+                </div>
+                
+                <p>Here, type must be a valid C data type including char, w_char, int, float, double, bool, or any user-defined object; and variable_list may consist of one or more identifier names separated by commas. Some valid declarations are shown here −</p>
+                <div>
+                <pre>
+                
+                    <code>
+    int    i, j, k;
+    char   c, ch;
+    float  f, salary;
+    double d;
+                    
+                    </code>
+                
+                </pre>
+                </div>
+            </section> <hr>
+            
+            <section class="main-section" id="if_else">
+            
+                <header ><h2>if else</h2></header>
+                
+                <p>An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.</p>
+                
+                <h3 class="syntax">Syntax</h3>
+                <div>
+                <pre>
+                
+                    <code>
+                    
+    if(boolean_expression) {
+                /* statement(s) will execute if the boolean expression is true */
+    } else {
+                /* statement(s) will execute if the boolean expression is false */
+    }
+                    
+                      </code>
+                </pre> </div>
+                
+                <p>If the Boolean expression evaluates to true, then the if block will be executed, otherwise, the else block will be executed.C programming language assumes any non-zero and non-null values as true, and if it is either zero or null, then it is assumed as false value.</p>
+            <div>
+                <pre>
+                
+                <code>
+                
+    #include &lt;stdio.h&gt;
+ 
+    int main () {
+
+            /* local variable definition */
+            int a = 100;
+ 
+            /* check the boolean condition */
+            if( a &lt; 20 ) {
+                /* if condition is true then print the following */
+                printf("a is less than 20\n" );
+            } else {
+                /* if condition is false then print the following */
+                printf("a is not less than 20\n" );
+            }
+   
+            printf("value of a is : %d\n", a);
+ 
+            return 0;
+    }
+                
+                </code>
+                
+                </pre>
+                </div>
+            </section> <hr>
+            
+            <section class="main-section" id="for_loop">
+            
+                <header ><h2>for loop</h2></header>
+            
+                <p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</p>
+                
+                <h3 class="syntax">Syntax</h3>
+                
+                <p>The syntax of a for loop in C programming language is −</p>
+                <div>
+                <pre>
+                
+                <code>
+   for ( init; condition; increment ) {
+   statement(s);
+   }
+                
+                </code>
+                
+                </pre>
+                
+                </div>
+                <div>
+                <pre>
+                
+                <code>
+    #include &lt;stdio.h&gt;
+ 
+    int main () {
+
+        int a;
+	
+        /* for loop execution */
+        for( a = 10; a &lt; 20; a = a + 1 ){
+        printf("value of a: %d\n", a);
+        }
+ 
+        return 0;
+        }
+                
+                
+                </code>
+                
+                </pre>
+                </div>
+            </section> <hr>
+            
+        
+        </main>
+    
+    
+
+
+
+</body>
+</html>
